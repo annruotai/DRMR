@@ -7,7 +7,7 @@ public class Student {
     private  String  s_name;
     private  String  s_sex;
     private  Integer  s_age;
-    private  Integer  s_phone;
+    private  String  s_phone;
     private  Integer  s_classid;
     private  String s_classname;
     private  Integer  s_dormitoryid;
@@ -56,11 +56,11 @@ public class Student {
         this.s_age = s_age;
     }
 
-    public Integer getS_phone() {
+    public String getS_phone() {
         return s_phone;
     }
 
-    public void setS_phone(Integer s_phone) {
+    public void setS_phone(String s_phone) {
         this.s_phone = s_phone;
     }
 

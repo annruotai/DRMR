@@ -85,35 +85,35 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">年龄：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_age" class="layui-input" i placeholder="请输入年龄">
+                        <input type="text" name="s_age" lay-verify="required" class="layui-input" i placeholder="请输入年龄">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">电话：</label>
                     <div class="layui-input-block">
-                        <input type="text"  name="s_phone"  class="layui-input" placeholder="请输入电话">
+                        <input type="text"  name="s_phone" lay-verify="required" class="layui-input" placeholder="请输入电话">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">班级编号：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_classid" class="layui-input" placeholder="请输入班级编号">
+                        <input type="text" name="s_classid" lay-verify="required" class="layui-input" placeholder="请输入班级编号">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">班级名：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_classname" class="layui-input" placeholder="请输入班级名">
+                        <input type="text" name="s_classname" lay-verify="required" class="layui-input" placeholder="请输入班级名">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">寝室编号：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_dormitoryid"  class="layui-input" placeholder="请输入寝室编号">
+                        <input type="text" name="s_dormitoryid" lay-verify="required"  class="layui-input" placeholder="请输入寝室编号">
                     </div>
                 </div>
 

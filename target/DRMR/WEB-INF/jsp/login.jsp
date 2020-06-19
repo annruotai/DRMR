@@ -32,25 +32,26 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    layui.use(['form','layer','laydate'], function(){
-        var form = layui.form,
-            $ = layui.jquery,
-            laydate = layui.laydate;
+<%--自己写的--%>
+<%--<script type="text/javascript">--%>
+<%--    layui.use(['form','layer','laydate'], function(){--%>
+<%--        var form = layui.form,--%>
+<%--            $ = layui.jquery,--%>
+<%--            laydate = layui.laydate;--%>
 
-            $("#form")[0].reset();
-            form.on('submit(login)', function(data) {
+<%--            $("#form")[0].reset();--%>
+<%--            form.on('submit(login)', function(data) {--%>
 
-                if ($("#a_username").val() == "" && $("#a_password").val() == ""){
-                    alert("请输入管理员账号或者密码!!!");
-                    return false;
-                }else {
-                    return true;
-                }
+<%--                if ($("#a_username").val() == "" && $("#a_password").val() == ""){--%>
+<%--                    alert("请输入管理员账号或者密码!!!");--%>
+<%--                    return false;--%>
+<%--                }else {--%>
+<%--                    return true;--%>
+<%--                }--%>
 
-            })
-    });
-</script>
+<%--            })--%>
+<%--    });--%>
+<%--</script>--%>
 
 <div class="footer">
     <span>@Copyright © 2019-2020 版权所有 </span>
