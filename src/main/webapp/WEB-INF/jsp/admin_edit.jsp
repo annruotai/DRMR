@@ -28,7 +28,7 @@
             </label>
             <div class="layui-input-inline">
                 <input type="text" id="a_username" name="a_username"
-                       autocomplete="off" value="${sessionScope.a.a_username}" class="layui-input">
+                       autocomplete="off" value="${sessionScope.a.a_username}" class="layui-input" disabled>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
             </label>
             <div class="layui-input-inline">
                 <input type="text" id="a_power" name="a_power"
-                       autocomplete="off" value="${sessionScope.a.a_power}" class="layui-input">
+                       autocomplete="off" value="${sessionScope.a.a_power}" class="layui-input" disabled>
             </div>
         </div>
 
@@ -78,7 +78,7 @@
             </label>
             <div class="layui-input-inline">
                 <input type="text" id="a_describe" name="a_describe"
-                       autocomplete="off" value="${sessionScope.a.a_describe}" class="layui-input">
+                       autocomplete="off" value="${sessionScope.a.a_describe}" class="layui-input" disabled>
             </div>
         </div>
 
@@ -100,7 +100,7 @@
         $("#f_auto")[0].reset();
         form.on('submit(updateAdmin)', function(data) {
             if ($("#a_password").val()=='${sessionScope.a.a_password}'){
-                alert("密码一样")
+                alert("请修改密码")
                 return false;
             }
 

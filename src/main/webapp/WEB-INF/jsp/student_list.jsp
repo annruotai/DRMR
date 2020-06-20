@@ -99,14 +99,34 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">班级编号：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_classid" lay-verify="required" class="layui-input" placeholder="请输入班级编号">
+                            <select name="s_classid" lay-verify="">
+                                <option value="">请选择一个班级编号</option>
+                                <option value="141">141</option>
+                                <option value="151">151</option>
+                                <option value="140">140</option>
+                                <option value="161">161</option>
+                                <option value="153">153</option>
+                                <option value="162">162</option>
+                                <option value="171">171</option>
+                                <option value="154">154</option>
+                                <option value="418">418</option>
+                                <option value="250">250</option>
+                            </select>
+<%--                        <input type="text" name="s_classid" lay-verify="required" class="layui-input" placeholder="请输入班级编号">--%>
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">班级名：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="s_classname" lay-verify="required" class="layui-input" placeholder="请输入班级名">
+                        <select name="s_classname" lay-verify="">
+                            <option value="">请选择一个班级名</option>
+                            <option value="生物">生物</option>
+                            <option value="应化">应化</option>
+                            <option value="土木">土木</option>
+                        </select>
+<%--                        <input type="text" name="s_classname" lay-verify="required" class="layui-input" placeholder="请输入班级名">--%>
+
                     </div>
                 </div>
 

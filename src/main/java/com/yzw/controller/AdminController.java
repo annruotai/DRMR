@@ -39,7 +39,11 @@ public class AdminController {
 		Admin ad = adminService.findAdmin(admin);
 		if(ad!=null){
 			session.setAttribute("ad", ad);
-			return "homepage";
+			if (session.getAttribute("ad")==null){
+				return  "redirect:index.jsp";
+			}else {
+				return "homepage";
+			}
 		}
 		model.addAttribute("msg", "用户名或密码错误，请重新登录！");
 		return "login";
@@ -51,8 +55,8 @@ public class AdminController {
 	@RequestMapping(value = "/loginOut")
 	public String loginOut(Admin admin, Model model, HttpSession session) {
 		session.invalidate();
-		return "login";
-
+//		session.removeAttribute("ad");
+		return "redirect:index.jsp";
 	}
 
 	/**

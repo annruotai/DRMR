@@ -49,4 +49,16 @@ public class Class {
     public void setStudents(List<Student> students) {
         this.students = students;
     }
+
+
+    @Override
+    public String toString() {
+        return "Class{" +
+                "c_id=" + c_id +
+                ", c_classid=" + c_classid +
+                ", c_classname='" + c_classname + '\'' +
+                ", c_counsellor='" + c_counsellor + '\'' +
+                ", students=" + students +
+                '}';
+    }
 }

@@ -6,7 +6,7 @@
     <script src="/js/jquery-1.3.2.min.js"></script>
     <script src="js/login.js"></script>
 
-    <title>前台首页</title>
+    <title>HY宿舍管理 Sign In</title>
 </head>
 <body>
 
@@ -31,27 +31,6 @@
         </div>
     </div>
 </div>
-
-<%--自己写的--%>
-<%--<script type="text/javascript">--%>
-<%--    layui.use(['form','layer','laydate'], function(){--%>
-<%--        var form = layui.form,--%>
-<%--            $ = layui.jquery,--%>
-<%--            laydate = layui.laydate;--%>
-
-<%--            $("#form")[0].reset();--%>
-<%--            form.on('submit(login)', function(data) {--%>
-
-<%--                if ($("#a_username").val() == "" && $("#a_password").val() == ""){--%>
-<%--                    alert("请输入管理员账号或者密码!!!");--%>
-<%--                    return false;--%>
-<%--                }else {--%>
-<%--                    return true;--%>
-<%--                }--%>
-
-<%--            })--%>
-<%--    });--%>
-<%--</script>--%>
 
 <div class="footer">
     <span>@Copyright © 2019-2020 版权所有 </span>

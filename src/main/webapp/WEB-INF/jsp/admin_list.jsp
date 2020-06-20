@@ -279,13 +279,17 @@
     $(".updateEdit").click(function () {
         var myid = $(this).parent("td").parent("tr").children(".myid").html();
         //判断
-        var admin_id = ${sessionScope.ad.a_id};
-        if(admin_id != myid){
-            layer.alert("对不起，您没有权限:(");
-        }else {
-            <%--window.location.href = "/findAdminById?a_id=${ai.a_id}";--%>
+        var a_power = ${sessionScope.ad.a_power};
+        var id = ${sessionScope.ad.a_id};
+        if(id == myid){
             window.location.href = "/findAdminById?a_id=" + myid;
+        } else if(a_power != 1 ||   id != myid){
+            layer.alert("对不起，您没有权限:(");
         }
+        <%--else{--%>
+        <%--    &lt;%&ndash;window.location.href = "/findAdminById?a_id=${ai.a_id}";&ndash;%&gt;--%>
+        <%--    window.location.href = "/findAdminById?a_id=" + myid;--%>
+        <%--}--%>
     });
 
 
@@ -296,6 +300,8 @@
         var id = ${sessionScope.ad.a_id};
         if(power != 1 && id != a_id){
                 layer.alert("对不起，您没有权限:(");
+        }else  if (id == a_id){
+            layer.alert("对不起，不能删除自己:(");
         }
         // else if(power == 1 && id == a_id){
         //     layer.alert("对不起，您没有权限:(");

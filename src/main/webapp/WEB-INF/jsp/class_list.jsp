@@ -68,7 +68,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">班级编号：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="c_classid" class="layui-input" placeholder="请输入班级编号">
+                        <input type="text" name="c_classid" lay-verify="required" class="layui-input" placeholder="请输入班级编号">
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">辅导员：</label>
                     <div class="layui-input-block">
-                        <input type="text" name="c_counsellor" class="layui-input" placeholder="请输入辅导员姓名">
+                        <input type="text" name="c_counsellor" lay-verify="required" class="layui-input" placeholder="请输入辅导员姓名">
                     </div>
                 </div>
 

@@ -1,8 +1,10 @@
 package com.yzw.controller;
 
 
+import com.yzw.po.Class;
 import com.yzw.po.PageInfo;
 import com.yzw.po.Student;
+import com.yzw.service.ClassService;
 import com.yzw.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,6 +25,8 @@ public class StudentController {
 	// 依赖注入
 	@Autowired
 	private StudentService studentService;
+	@Autowired
+	private ClassService classService;
 
 	/**
 	 * 分页查询
@@ -51,6 +55,24 @@ public class StudentController {
 	}
 
 	/**
+	 * 查询所有
+	 */
+//	@RequestMapping( "/querys")
+//	@ResponseBody
+//	public List<Class> querys(Model model){
+//
+//		List<Class> all = classService.getAll();
+//
+////		for (Class aClass : all) {
+////			System.out.println(aClass);
+////		}
+//
+//		return all;
+//	}
+
+
+
+	/**
 	 * 删除学生信息
 	 */
 	@RequestMapping( "/deleteStudent")
@@ -66,7 +88,7 @@ public class StudentController {
 
    @RequestMapping(value = "/addStudent" ,method = RequestMethod.POST)
    @ResponseBody
-   public String addStudent(@RequestBody Student student) {
+   public String addStudent(@RequestBody Student student , Model model) {
 	   int s = studentService.addStudent(student);
 	    return "student_list";
     }

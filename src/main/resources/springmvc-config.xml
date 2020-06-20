@@ -22,6 +22,10 @@
 	<mvc:resources location="/lib/" mapping="/lib/**"/>
 	<mvc:resources location="/layui_exts/" mapping="/layui_exts/**"/>
 
+	<mvc:interceptors>
+		<bean class="com.yzw.interceptor.Loginlnterceptor"/>
+	</mvc:interceptors>
+
 	<!-- 配置视图解析器 -->
 	<bean class=
     "org.springframework.web.servlet.view.InternalResourceViewResolver">
