@@ -29,6 +29,7 @@ public class AdminController {
 	 * 用户登录
 	 */
 	/**
+	 *
 	 * 将提交数据(username,password)写入Admin对象
 	 */
 	@RequestMapping(value = "/login")
